@@ -29,7 +29,6 @@ def main():
                 continue
 
             try:
-                print(json.dumps(song))
                 if scraper.post(BEAT_HELPER_URL, json=song).status_code != 202:
                     raise Exception("Wrong status code!")
             except Exception as e:
