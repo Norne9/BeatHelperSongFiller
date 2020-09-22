@@ -39,6 +39,7 @@ def main():
             print(f"Processed {song['SongName']}.")
             time.sleep(DELAY_SONG)
 
+        print("Waiting...")
         time.sleep(DELAY_END)
 
 
